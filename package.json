@@ -1,0 +1,82 @@
+{
+  "name": "autodesk-inventor-ilogic-docs",
+  "version": "1.0.0",
+  "description": "Comprehensive iLogic programming documentation for Autodesk Inventor - designed for Context7 and AI assistants",
+  "main": "docs/README.md",
+  "keywords": [
+    "autodesk",
+    "inventor",
+    "ilogic",
+    "vb.net",
+    "automation",
+    "parametric-design",
+    "cad",
+    "api",
+    "documentation",
+    "context7"
+  ],
+  "author": "Engineering Community",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MFRAirmaster/AutodeskIlogicContext7.git"
+  },
+  "homepage": "https://github.com/MFRAirmaster/AutodeskIlogicContext7#readme",
+  "context7": {
+    "library": "autodesk-inventor-ilogic",
+    "version": "1.0.0",
+    "categories": [
+      "CAD",
+      "Automation",
+      "Parametric Design",
+      "VB.NET",
+      "Engineering"
+    ],
+    "topics": [
+      "iLogic Programming",
+      "Parameter Manipulation",
+      "Property Access",
+      "Feature Control",
+      "Assembly Automation",
+      "BOM Operations",
+      "File I/O",
+      "Error Handling",
+      "Best Practices"
+    ],
+    "entry": "docs/README.md",
+    "structure": {
+      "core-concepts": {
+        "path": "docs/core-concepts",
+        "description": "Fundamental iLogic concepts and syntax"
+      },
+      "common-patterns": {
+        "path": "docs/common-patterns",
+        "description": "Frequently used programming patterns"
+      },
+      "api-reference": {
+        "path": "docs/api-reference",
+        "description": "Detailed API documentation"
+      },
+      "examples": {
+        "path": "docs/examples",
+        "description": "Real-world code examples"
+      },
+      "best-practices": {
+        "path": "docs/best-practices",
+        "description": "Professional coding standards"
+      },
+      "troubleshooting": {
+        "path": "docs/troubleshooting",
+        "description": "Common issues and solutions"
+      }
+    }
+  },
+  "scripts": {
+    "validate": "echo 'Validating documentation structure...'",
+    "build": "echo 'Building Context7 documentation...'",
+    "test": "echo 'No tests configured'"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
