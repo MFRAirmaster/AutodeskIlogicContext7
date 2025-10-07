@@ -1,0 +1,6 @@
+' Title: Trailing Zeros
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/trailing-zeros/td-p/13803427
+' Category: api
+' Scraped: 2025-10-07T14:26:54.514009
+
+iProperties.Value("Project", "Stock Number") = "HRS " & iProperties.Value("Custom", "GAUGE") & " x " & FormatNumber(WIDTH, 2) & " x " & FormatNumber(LENGTH, 2)

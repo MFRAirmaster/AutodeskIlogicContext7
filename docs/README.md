@@ -55,6 +55,10 @@ Real-world code examples:
 - Complex parametric designs
 - Custom user forms
 - Integration with external data
+- **[Forum Examples](./examples/forum-scraped-examples.md)** - Community solutions from Autodesk forums
+- **[Advanced Forum Examples](./examples/forum-advanced-examples.md)** - Complex API usage and advanced scenarios
+- **[Comprehensive iLogic Guide](./examples/comprehensive-ilogic-guide.md)** - Complete programming reference with patterns and best practices
+- **[Extended Examples](./examples/extended-ilogic-examples.md)** - Advanced patterns, error handling, and complex automation
 
 ## Quick Start
 

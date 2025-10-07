@@ -1,0 +1,21 @@
+{
+  "name": "autodesk-forum-scraper",
+  "version": "1.0.0",
+  "description": "MCP server for scraping Autodesk forum posts with Puppeteer",
+  "main": "index.js",
+  "bin": {
+    "autodesk-forum-scraper": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["mcp", "autodesk", "forum", "scraper", "puppeteer", "ilogic"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.19.1",
+    "puppeteer": "^24.23.0"
+  }
+}

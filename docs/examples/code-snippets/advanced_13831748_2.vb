@@ -1,0 +1,24 @@
+' Title: iLogic Rule to Measure Area of Two Faces
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-rule-to-measure-area-of-two-faces/td-p/13831748
+' Category: advanced
+' Scraped: 2025-10-07T13:25:59.066228
+
+Dim iLogicAuto = iLogicVb.Automation
+
+Dim namedEntities = iLogicAuto.GetNamedEntities(ThisDoc.Document)
+Dim uom As UnitsOfMeasure=ThisApplication.UnitsOfMeasure
+Dim COLD_OPENING_Face, HOT_OPENING_Face As Face
+COLD_OPENING_Face = namedEntities.FindEntity("COLD_OPENING")
+HOT_OPENING_Face = namedEntities.FindEntity("HOT_OPENING")
+Dim COLD_OPENING_Area, HOT_OPENING_Area, SUM_Area As Double
+COLD_OPENING_Area = COLD_OPENING_Face.Evaluator.Area
+HOT_OPENING_Area = HOT_OPENING_Face.Evaluator.Area
+SUM_Area = COLD_OPENING_Area + HOT_OPENING_Area
+COLD_OPENING_Area =  uom.ConvertUnits(COLD_OPENING_Area,UnitsTypeEnum.kDatabaseLengthUnits,ThisDoc.Document.UnitsOfMeasure.LengthUnits)
+HOT_OPENING_Area =  uom.ConvertUnits(HOT_OPENING_Area,UnitsTypeEnum.kDatabaseLengthUnits,ThisDoc.Document.UnitsOfMeasure.LengthUnits)
+SUM_Area= uom.ConvertUnits(SUM_Area,UnitsTypeEnum.kDatabaseLengthUnits,ThisDoc.Document.UnitsOfMeasure.LengthUnits)
+MessageBox.Show("COLD_OPENING_Area= " & COLD_OPENING_Area & vbCrLf & "HOT_OPENING_Area= " & HOT_OPENING_Area & vbCrLf & "SUM_Area= " & SUM_Area, "Area")
+
+iProperties.Value("Custom", "COLD_OPENING") = COLD_OPENING_Area
+iProperties.Value("Custom", "HOT_OPENING") =  HOT_OPENING_Area
+iProperties.Value("Custom", "SUM") = SUM_Area
