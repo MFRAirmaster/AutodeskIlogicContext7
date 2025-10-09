@@ -434,14 +434,16 @@ class ParallelForumScraper:
                 task = asyncio.create_task(self.scrape_forum_page(context, forum_url, page_num))
                 tasks.append(task)
 
-        # Wait for all tasks to complete
+        # Wait for all tasks to complete, handling exceptions
         results = await asyncio.gather(*tasks, return_exceptions=True)
 
-        # Collect all URLs
+        # Collect all URLs, filtering out errors
         all_post_urls = []
         for result in results:
             if isinstance(result, list):
                 all_post_urls.extend(result)
+            elif isinstance(result, Exception):
+                print(f"⚠️  Task failed with error: {result}")
 
         # Remove duplicates
         all_post_urls = list(set(all_post_urls))
@@ -496,9 +498,19 @@ class ParallelForumScraper:
             # Print summary
             await self.print_summary()
 
+        except Exception as e:
+            print(f"❌ Error during scraping: {e}")
         finally:
-            await context.close()
-            await browser.close()
+            # Close context and browser with proper error handling
+            try:
+                await context.close()
+            except Exception as e:
+                print(f"⚠️  Warning: Error closing context: {e}")
+            
+            try:
+                await browser.close()
+            except Exception as e:
+                print(f"⚠️  Warning: Error closing browser: {e}")
 
     async def print_summary(self):
         """Print scraping summary"""
@@ -525,9 +537,11 @@ class ParallelForumScraper:
 
 async def main():
     """Main entry point"""
-    # Create scraper with 5 parallel workers for better success rate
-    scraper = ParallelForumScraper(max_workers=5)
-    await scraper.run(max_pages=10)
+    # Create scraper with 4 parallel workers for better stability
+    # Scraping 200+ pages with ~57 posts per page = ~11,400 posts
+    # Using fewer workers to avoid overwhelming the server
+    scraper = ParallelForumScraper(max_workers=4)
+    await scraper.run(max_pages=250)
 
 if __name__ == "__main__":
     asyncio.run(main())
