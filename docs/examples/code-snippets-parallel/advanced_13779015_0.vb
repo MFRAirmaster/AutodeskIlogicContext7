@@ -1,7 +1,7 @@
 ' Title: Auto naming an excel file - Inventor 2025
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/auto-naming-an-excel-file-inventor-2025/td-p/13779015#messageview_0
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/auto-naming-an-excel-file-inventor-2025/td-p/13779015
 ' Category: advanced
-' Scraped: 2025-10-07T13:54:30.375286
+' Scraped: 2025-10-09T09:05:24.296333
 
 Dim oDrawDoc As DrawingDocument
 Dim oSheet As Sheet

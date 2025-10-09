@@ -1,7 +1,7 @@
 ' Title: How can I annotate these dimensions in a drawing, using iLogic?
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/how-can-i-annotate-these-dimensions-in-a-drawing-using-ilogic/td-p/13738809
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/how-can-i-annotate-these-dimensions-in-a-drawing-using-ilogic/td-p/13738809#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:09:46.083885
+' Scraped: 2025-10-09T09:05:07.436433
 
 Public Sub Main()
   Dim oDrawDoc As DrawingDocument

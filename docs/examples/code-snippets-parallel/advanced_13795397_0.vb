@@ -1,7 +1,7 @@
 ' Title: Can we access textbox objects on the sheet object?
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/can-we-access-textbox-objects-on-the-sheet-object/td-p/13795397#messageview_0
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/can-we-access-textbox-objects-on-the-sheet-object/td-p/13795397
 ' Category: advanced
-' Scraped: 2025-10-07T13:58:52.774033
+' Scraped: 2025-10-09T08:59:44.230678
 
 Sub main
 

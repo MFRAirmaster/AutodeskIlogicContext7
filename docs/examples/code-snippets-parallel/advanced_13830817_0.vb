@@ -1,7 +1,7 @@
 ' Title: iLogic vs Sheet Metal Thickness: Different results between Inventor 2024.2 and 2026.1
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-vs-sheet-metal-thickness-different-results-between/td-p/13830817
 ' Category: advanced
-' Scraped: 2025-10-07T14:09:37.420133
+' Scraped: 2025-10-09T09:09:08.971172
 
 Private Sub GetFlatPatternDimensions()
 

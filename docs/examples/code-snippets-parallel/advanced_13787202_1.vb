@@ -1,7 +1,7 @@
 ' Title: Boolean switch of loft features
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/boolean-switch-of-loft-features/td-p/13787202
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/boolean-switch-of-loft-features/td-p/13787202#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:06:00.565413
+' Scraped: 2025-10-09T08:57:55.326165
 
 Dim oDoc As PartDocument = ThisDoc.Document 
  Dim oLofts As LoftFeatures = oDoc.ComponentDefinition.Features.LoftFeatures

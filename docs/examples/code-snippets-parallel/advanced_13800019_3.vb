@@ -1,7 +1,7 @@
 ' Title: AddAngularDimension throws exception
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/addangulardimension-throws-exception/td-p/13800019
 ' Category: advanced
-' Scraped: 2025-10-07T14:08:53.779455
+' Scraped: 2025-10-09T09:09:18.484234
 
 // 1. Find the shared point between the two curves
 Point2d sharedPoint = FindSharedEndpoint(curve1, curve2);

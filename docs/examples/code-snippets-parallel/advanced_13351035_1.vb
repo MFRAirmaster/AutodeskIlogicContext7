@@ -1,7 +1,7 @@
 ' Title: ID of occurrence in a pattern
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/id-of-occurrence-in-a-pattern/td-p/13351035#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:37:53.038977
+' Scraped: 2025-10-09T08:59:55.744982
 
 Sub Main
 	Dim oPDoc As PartDocument = TryCast(ThisDoc.Document, Inventor.PartDocument)

@@ -1,7 +1,7 @@
 ' Title: iLogic for hide/show every possible object
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-for-hide-show-every-possible-object/td-p/13761985#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:05:30.688902
+' Scraped: 2025-10-09T09:00:09.129488
 
 Sub Main()
 ' iLogic: Sichtbarkeit umschalten je nach Dokumenttyp und Auswahl

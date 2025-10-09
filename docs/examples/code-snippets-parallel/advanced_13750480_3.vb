@@ -1,7 +1,7 @@
 ' Title: Apprentice Server with powershell, working prefix copy design
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/apprentice-server-with-powershell-working-prefix-copy-design/td-p/13750480#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:00:29.582428
+' Scraped: 2025-10-09T09:07:28.496377
 
 AddReference "System.IO"
 AddReference "System.Windows.Forms"

@@ -1,7 +1,7 @@
 ' Title: Mark feature messes up loop count in iLogic
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/mark-feature-messes-up-loop-count-in-ilogic/td-p/13772938
 ' Category: advanced
-' Scraped: 2025-10-07T14:37:35.887500
+' Scraped: 2025-10-09T09:04:06.505644
 
 Sub Main
 	

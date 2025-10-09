@@ -1,7 +1,7 @@
 ' Title: Logic to match Inventor file names to the search engine names
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/logic-to-match-inventor-file-names-to-the-search-engine-names/td-p/13824844
 ' Category: advanced
-' Scraped: 2025-10-07T13:57:52.486677
+' Scraped: 2025-10-09T08:51:07.751035
 
 Dim ass As AssemblyDocument = ThisDoc.Document
 For Each occ As ComponentOccurrence In ass.ComponentDefinition.Occurrences

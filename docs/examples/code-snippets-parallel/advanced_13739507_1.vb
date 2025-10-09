@@ -1,7 +1,7 @@
 ' Title: Unable to cast COM object of type 'System._ComObject to interface type 'Inventor.Point2d'.
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/unable-to-cast-com-object-of-type-system-comobject-to-interface/td-p/13739507
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/unable-to-cast-com-object-of-type-system-comobject-to-interface/td-p/13739507#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T13:54:49.288231
+' Scraped: 2025-10-09T09:06:37.755294
 
 Imports System.Reflection
 

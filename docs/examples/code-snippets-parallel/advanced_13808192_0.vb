@@ -1,7 +1,7 @@
 ' Title: iProperties Update Help
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/iproperties-update-help/td-p/13808192
 ' Category: advanced
-' Scraped: 2025-10-07T14:10:58.042315
+' Scraped: 2025-10-09T08:55:53.489440
 
 ' Get the current document's file path and name
 Dim filePath As String

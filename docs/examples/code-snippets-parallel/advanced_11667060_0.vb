@@ -1,7 +1,7 @@
 ' Title: Create work point from axis and plane
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/create-work-point-from-axis-and-plane/td-p/11667060#messageview_0
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/create-work-point-from-axis-and-plane/td-p/11667060
 ' Category: advanced
-' Scraped: 2025-10-07T14:05:16.064711
+' Scraped: 2025-10-09T09:00:48.735295
 
 Sub CreateWorkPoint()
 

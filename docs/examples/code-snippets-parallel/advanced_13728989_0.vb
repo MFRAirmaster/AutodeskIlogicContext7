@@ -1,7 +1,7 @@
 ' Title: Using Named Entities to Automate Dimension using Inventor API.
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/using-named-entities-to-automate-dimension-using-inventor-api/td-p/13728989
 ' Category: advanced
-' Scraped: 2025-10-07T14:05:16.543015
+' Scraped: 2025-10-09T08:55:22.922726
 
 Dim doc = ThisApplication.ActiveDocument
 Dim osheet = doc.ActiveSheet

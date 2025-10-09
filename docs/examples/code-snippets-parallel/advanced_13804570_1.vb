@@ -1,7 +1,7 @@
 ' Title: iLogic get preparation drawing view document
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-get-preparation-drawing-view-document/td-p/13804570#messageview_0
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-get-preparation-drawing-view-document/td-p/13804570
 ' Category: advanced
-' Scraped: 2025-10-07T14:16:19.862615
+' Scraped: 2025-10-09T09:03:43.591154
 
 Dim oInvApp As Inventor.Application = ThisApplication
 Dim oView As DrawingView

@@ -1,7 +1,7 @@
 ' Title: Unreserve legacy check out file with code?
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/unreserve-legacy-check-out-file-with-code/td-p/12232593
 ' Category: advanced
-' Scraped: 2025-10-07T14:19:21.609875
+' Scraped: 2025-10-09T09:02:46.282603
 
 Sub Main removeCheckOutStatusSample()
     ' to remove the Check out status you need to activate a Shared Project

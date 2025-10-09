@@ -1,7 +1,7 @@
 ' Title: Threaded holes while logged off using API
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/threaded-holes-while-logged-off-using-api/td-p/13115155#messageview_0
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/threaded-holes-while-logged-off-using-api/td-p/13115155
 ' Category: advanced
-' Scraped: 2025-10-07T13:58:11.658845
+' Scraped: 2025-10-09T08:55:37.300930
 
 Type inventorAppType = System.Type.GetTypeFromProgID("Inventor.Application");
 InventorApp = System.Activator.CreateInstance(inventorAppType) as Inventor.Application;

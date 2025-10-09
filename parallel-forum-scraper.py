@@ -22,7 +22,14 @@ class ParallelForumScraper:
 
     def __init__(self, max_workers: int = 5):  # Reduced default workers for better success rate
         self.base_url = "https://forums.autodesk.com"
-        self.forum_url = "/t5/inventor-programming-forum/bd-p/inventor-programming-ilogic-forum-en"
+
+        # Multiple forum sections to scrape
+        self.forum_sections = [
+            "/t5/inventor-programming-forum/bd-p/inventor-programming-ilogic-forum-en",  # iLogic
+            "/t5/inventor-programming-forum/bd-p/inventor-programming-api-forum-en",     # API
+            "/t5/inventor-programming-forum/bd-p/inventor-programming-interface-forum-en" # Interface
+        ]
+
         self.scraped_posts = set()
         self.results = []
         self.stats = {
@@ -186,7 +193,7 @@ class ParallelForumScraper:
         )
         return context
 
-    async def scrape_forum_page(self, context: BrowserContext, page_num: int) -> List[str]:
+    async def scrape_forum_page(self, context: BrowserContext, forum_url: str, page_num: int) -> List[str]:
         """Scrape a forum page for post URLs"""
         urls = []
 
@@ -195,8 +202,8 @@ class ParallelForumScraper:
                 page = await context.new_page()
 
                 # Navigate to forum page
-                forum_page_url = f"{self.base_url}{self.forum_url}?page={page_num}"
-                print(f"📄 Scraping forum page {page_num}: {forum_page_url}")
+                forum_page_url = f"{self.base_url}{forum_url}?page={page_num}"
+                print(f"📄 Scraping forum page {page_num} ({forum_url}): {forum_page_url}")
 
                 await page.goto(forum_page_url, wait_until='networkidle', timeout=30000)
 
@@ -228,10 +235,10 @@ class ParallelForumScraper:
 
                 # Remove duplicates
                 urls = list(set(post_links))
-                print(f"🔗 Found {len(urls)} post URLs on page {page_num}")
+                print(f"🔗 Found {len(urls)} post URLs on page {page_num} ({forum_url})")
 
             except Exception as e:
-                print(f"❌ Error scraping forum page {page_num}: {e}")
+                print(f"❌ Error scraping forum page {page_num} ({forum_url}): {e}")
             finally:
                 await page.close()
 
@@ -416,14 +423,16 @@ class ParallelForumScraper:
             print(f"✅ Generated {filename} with {len(posts)} examples")
 
     async def scrape_forum_pages_parallel(self, context: BrowserContext, max_pages: int) -> List[str]:
-        """Scrape multiple forum pages in parallel"""
+        """Scrape multiple forum pages in parallel across all forum sections"""
         print(f"🚀 Starting parallel forum scraping with {self.max_workers} workers...")
+        print(f"Forum sections: {len(self.forum_sections)}")
 
-        # Create tasks for all pages
+        # Create tasks for all forum sections and pages
         tasks = []
-        for page_num in range(1, max_pages + 1):
-            task = asyncio.create_task(self.scrape_forum_page(context, page_num))
-            tasks.append(task)
+        for forum_url in self.forum_sections:
+            for page_num in range(1, max_pages + 1):
+                task = asyncio.create_task(self.scrape_forum_page(context, forum_url, page_num))
+                tasks.append(task)
 
         # Wait for all tasks to complete
         results = await asyncio.gather(*tasks, return_exceptions=True)
@@ -436,7 +445,7 @@ class ParallelForumScraper:
 
         # Remove duplicates
         all_post_urls = list(set(all_post_urls))
-        print(f"📋 Total unique post URLs found: {len(all_post_urls)}")
+        print(f"📋 Total unique post URLs found across all sections: {len(all_post_urls)}")
 
         return all_post_urls
 

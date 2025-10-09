@@ -1,7 +1,7 @@
 ' Title: SetIncludeStatus gives error
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/setincludestatus-gives-error/td-p/13830952
 ' Category: advanced
-' Scraped: 2025-10-07T14:09:44.257868
+' Scraped: 2025-10-09T08:55:55.230880
 
 For Each sk As Sketch In pDef.Sketches
                     If Not matchStr(sk.Name, featureName) Then Continue For

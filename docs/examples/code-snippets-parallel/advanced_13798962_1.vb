@@ -1,7 +1,7 @@
 ' Title: Turn off visibility of welds in an occurrence
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/turn-off-visibility-of-welds-in-an-occurrence/td-p/13798962#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:07:06.731075
+' Scraped: 2025-10-09T09:02:06.002793
 
 For Each oOccurrence As ComponentOccurrence In oAssy.ComponentDefinition.Occurrences
 	If (oOccurrence.Name.Contains("Weld"))

@@ -1,7 +1,7 @@
 ' Title: About the issue of obtaining the extrusion start face
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/about-the-issue-of-obtaining-the-extrusion-start-face/td-p/13788769
 ' Category: advanced
-' Scraped: 2025-10-07T14:01:45.468718
+' Scraped: 2025-10-09T09:08:55.479773
 
 Private Function HandleDistanceFromFaceExtent(oExtrude As ExtrudeFeature) As Boolean
         Try

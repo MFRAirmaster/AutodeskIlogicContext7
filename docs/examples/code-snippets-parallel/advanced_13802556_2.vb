@@ -1,7 +1,7 @@
 ' Title: Colour Coding Parts by Length in Drawings
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/colour-coding-parts-by-length-in-drawings/td-p/13802556
 ' Category: advanced
-' Scraped: 2025-10-07T14:10:10.634083
+' Scraped: 2025-10-09T08:59:31.228687
 
 ' iLogic: Color each LEAF PART occurrence by its Part Number (drills into subassemblies)
 Public Class ThisRule

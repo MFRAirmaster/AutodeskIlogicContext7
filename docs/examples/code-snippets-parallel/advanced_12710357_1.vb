@@ -1,7 +1,7 @@
 ' Title: create a centerline by two points
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/create-a-centerline-by-two-points/td-p/12710357#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T13:57:47.429837
+' Scraped: 2025-10-09T09:06:29.514764
 
 Dim drawView As DrawingView = ThisApplication.CommandManager.Pick(SelectionFilterEnum.kDrawingViewFilter, "Select a drawing view")
 

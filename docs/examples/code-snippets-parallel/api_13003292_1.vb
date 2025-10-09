@@ -1,7 +1,7 @@
 ' Title: Can't Debug Inventor 2025 in VS2019
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/can-t-debug-inventor-2025-in-vs2019/td-p/13003292
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/can-t-debug-inventor-2025-in-vs2019/td-p/13003292#messageview_0
 ' Category: api
-' Scraped: 2025-10-07T14:07:05.040696
+' Scraped: 2025-10-09T09:02:25.273965
 
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
    <BaseAddress>285212672</BaseAddress>

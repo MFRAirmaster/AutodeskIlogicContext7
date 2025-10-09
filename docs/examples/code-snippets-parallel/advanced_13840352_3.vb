@@ -1,6 +1,6 @@
 ' Title: How to create a constraint with a part and the assembly's origin planes using the API?
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/how-to-create-a-constraint-with-a-part-and-the-assembly-s-origin/td-p/13840352#messageview_0
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/how-to-create-a-constraint-with-a-part-and-the-assembly-s-origin/td-p/13840352
 ' Category: advanced
-' Scraped: 2025-10-07T13:55:55.684561
+' Scraped: 2025-10-09T09:01:44.885989
 
 AssCons.AddFlushConstraint((WorkPlaneProxy)wpx1,(WorkPlane)oAsmCompDef.WorkPlanes["XY Plane"], 0);

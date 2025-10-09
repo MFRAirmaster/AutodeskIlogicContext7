@@ -1,7 +1,7 @@
 ' Title: Export an Assembly using ilogic to designated excel template tabs
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/export-an-assembly-using-ilogic-to-designated-excel-template/td-p/13745058
 ' Category: advanced
-' Scraped: 2025-10-07T14:03:26.497936
+' Scraped: 2025-10-09T08:54:37.183793
 
 oPartsOnlyBOMView.Export(oPATH + ThisDoc.FileName(False) + " BOM" + ".xlsx", kMicrosoftExcelFormat, "PARTS ONLY")
 oBOM.BOMViews.Item("Structured").Export(oPATH + ThisDoc.FileName(False) + " BOM Structured" + ".xlsx", kMicrosoftExcelFormat, "PARTS ONLY")

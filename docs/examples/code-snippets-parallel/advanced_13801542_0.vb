@@ -1,7 +1,7 @@
 ' Title: GLB export - Inventor server
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/glb-export-inventor-server/td-p/13801542
 ' Category: advanced
-' Scraped: 2025-10-07T14:07:38.687959
+' Scraped: 2025-10-09T08:55:21.084824
 
 public void TraverseAssembly(ComponentOccurrences occurrences)
         {

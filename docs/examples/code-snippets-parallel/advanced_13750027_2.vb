@@ -1,7 +1,7 @@
 ' Title: I need with a rule that will look for the closed profiles in a sketch array and select them all
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/i-need-with-a-rule-that-will-look-for-the-closed-profiles-in-a/td-p/13750027
 ' Category: advanced
-' Scraped: 2025-10-07T14:08:26.998553
+' Scraped: 2025-10-09T08:48:41.600186
 
 ' Get the active part document
 Dim oPartDoc As PartDocument = ThisApplication.ActiveDocument

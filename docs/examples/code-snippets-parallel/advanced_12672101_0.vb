@@ -1,7 +1,7 @@
 ' Title: Get overall dimensions  of all views of a drawing by iLogic
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/get-overall-dimensions-of-all-views-of-a-drawing-by-ilogic/td-p/12672101
 ' Category: advanced
-' Scraped: 2025-10-07T14:35:53.111302
+' Scraped: 2025-10-09T08:47:25.197074
 
 Public Class ThisRule
 ' This code was inspired and uses much of a code by Jelte de Jong

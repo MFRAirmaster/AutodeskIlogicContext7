@@ -1,7 +1,7 @@
 ' Title: iLogic Remove all Event Triggers &amp; add new Event Trigger
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-remove-all-event-triggers-amp-add-new-event-trigger/td-p/13234890#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:06:50.006076
+' Scraped: 2025-10-09T08:49:49.376821
 
 Sub Main
 

@@ -1,7 +1,7 @@
 ' Title: Promote a model state to become the master state with iLogic
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/promote-a-model-state-to-become-the-master-state-with-ilogic/td-p/12208768
 ' Category: advanced
-' Scraped: 2025-10-07T14:10:19.504807
+' Scraped: 2025-10-09T08:58:55.945361
 
 Sub Main 
 

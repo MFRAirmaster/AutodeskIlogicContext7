@@ -1,7 +1,7 @@
 ' Title: SelectionFilterEnum for holes
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/selectionfilterenum-for-holes/td-p/12017592
 ' Category: advanced
-' Scraped: 2025-10-07T14:10:38.940189
+' Scraped: 2025-10-09T08:56:26.433701
 
 Public Class ThisRule
 

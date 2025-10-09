@@ -1,7 +1,7 @@
 ' Title: Modify Bom Table Settings (add Custom iProperty Column)
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/modify-bom-table-settings-add-custom-iproperty-column/td-p/13792951
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/modify-bom-table-settings-add-custom-iproperty-column/td-p/13792951#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T13:59:47.315673
+' Scraped: 2025-10-09T08:54:28.742019
 
 If Not TypeOf ThisDoc.Document Is AssemblyDocument Then MsgBox("Not Assy!") : Return
 

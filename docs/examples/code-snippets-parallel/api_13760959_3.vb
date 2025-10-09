@@ -1,7 +1,7 @@
 ' Title: Show Thumbnail in the Windows.Forms.PictureBox iLogic Inventor 2026
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/show-thumbnail-in-the-windows-forms-picturebox-ilogic-inventor/td-p/13760959
 ' Category: api
-' Scraped: 2025-10-07T14:08:22.314915
+' Scraped: 2025-10-09T09:05:15.661206
 
 Imports System.Windows.Forms
 Imports System.IO

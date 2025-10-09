@@ -1,7 +1,7 @@
 ' Title: Custom ribbon button doesn't execute VBA sub
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/custom-ribbon-button-doesn-t-execute-vba-sub/td-p/13788549#messageview_0
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/custom-ribbon-button-doesn-t-execute-vba-sub/td-p/13788549
 ' Category: api
-' Scraped: 2025-10-07T14:07:29.359790
+' Scraped: 2025-10-09T09:01:12.359139
 
 Public Sub RunCleanButtonTest()
 ' --- Phase 1: Aggressive Cleanup ---

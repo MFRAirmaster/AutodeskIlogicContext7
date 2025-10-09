@@ -1,7 +1,7 @@
 ' Title: iLogic Rule to Measure Area of Two Faces
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-rule-to-measure-area-of-two-faces/td-p/13831748#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:02:09.364648
+' Scraped: 2025-10-09T09:06:16.137540
 
 Dim iLogicAuto = iLogicVb.Automation
 

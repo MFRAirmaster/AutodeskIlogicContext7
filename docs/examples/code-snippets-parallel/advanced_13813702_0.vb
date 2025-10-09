@@ -1,7 +1,7 @@
 ' Title: Sketched Symbol
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/sketched-symbol/td-p/13813702#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:08:50.481109
+' Scraped: 2025-10-09T09:02:43.243784
 
 Sub Main()
 AddOrInsertPromptedSymbol()

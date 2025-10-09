@@ -1,7 +1,7 @@
 ' Title: iLogic - turn on/off parts
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-turn-on-off-parts/td-p/13818839#messageview_0
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-turn-on-off-parts/td-p/13818839
 ' Category: advanced
-' Scraped: 2025-10-07T14:01:36.375363
+' Scraped: 2025-10-09T08:53:22.385561
 
 If Exterior_Option = "5/8" Then
 	Feature.IsActive("1201-P Mainframe Head & Sill .625") = True

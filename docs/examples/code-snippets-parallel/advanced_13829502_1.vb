@@ -1,7 +1,7 @@
 ' Title: Alpha Sort Component: natural sorting order
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/alpha-sort-component-natural-sorting-order/td-p/13829502
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/alpha-sort-component-natural-sorting-order/td-p/13829502#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:17:53.870173
+' Scraped: 2025-10-09T09:07:52.298124
 
 Public Class ThisRule
 

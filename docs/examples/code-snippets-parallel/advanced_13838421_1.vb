@@ -1,7 +1,7 @@
 ' Title: Can't make Plane.IntersectWithPlane work
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/can-t-make-plane-intersectwithplane-work/td-p/13838421
 ' Category: advanced
-' Scraped: 2025-10-07T14:09:36.291536
+' Scraped: 2025-10-09T09:01:05.224502
 
 Dim P As Plane
 	P = TG.CreatePlaneByThreePoints(P1, P2, P3)

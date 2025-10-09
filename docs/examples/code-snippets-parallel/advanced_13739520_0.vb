@@ -1,7 +1,7 @@
 ' Title: How to count specific hole features in an assembly environment
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/how-to-count-specific-hole-features-in-an-assembly-environment/td-p/13739520
 ' Category: advanced
-' Scraped: 2025-10-07T14:05:19.302327
+' Scraped: 2025-10-09T09:08:35.850328
 
 Public Class ThisRule
 

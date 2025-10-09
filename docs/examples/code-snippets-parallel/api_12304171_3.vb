@@ -1,7 +1,7 @@
 ' Title: Stop an iLogic rule while it's running
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/stop-an-ilogic-rule-while-it-s-running/td-p/12304171
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/stop-an-ilogic-rule-while-it-s-running/td-p/12304171#messageview_0
 ' Category: api
-' Scraped: 2025-10-07T14:00:14.721744
+' Scraped: 2025-10-09T09:02:34.903921
 
 ' iLogic: Save all open documents, skipping any that error.
 ' Drops dialogs (SilentOperation) and restores settings afterward.

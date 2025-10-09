@@ -1,7 +1,7 @@
 ' Title: Reference example: adding 2 leaders to a leader note
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/reference-example-adding-2-leaders-to-a-leader-note/td-p/13806456#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:35:46.245811
+' Scraped: 2025-10-09T08:59:24.990005
 
 Dim oDrawDoc As DrawingDocument
 oDrawDoc = ThisApplication.ActiveDocument

@@ -1,7 +1,7 @@
 ' Title: iAssembly iLogic to overwrite weight
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/iassembly-ilogic-to-overwrite-weight/td-p/13771720
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/iassembly-ilogic-to-overwrite-weight/td-p/13771720#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:10:57.574269
+' Scraped: 2025-10-09T08:49:11.552630
 
 Dim oAsmDoc As AssemblyDocument
 oAsmDoc = ThisApplication.ActiveDocument

@@ -1,7 +1,7 @@
 ' Title: View Identifier Modification Via iLogic - Parts List Properties
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/view-identifier-modification-via-ilogic-parts-list-properties/td-p/13758050
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/view-identifier-modification-via-ilogic-parts-list-properties/td-p/13758050#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:07:47.123945
+' Scraped: 2025-10-09T09:05:18.667672
 
 'start of ilogic code
 Dim oDoc As DrawingDocument:  oDoc = ThisDoc.Document

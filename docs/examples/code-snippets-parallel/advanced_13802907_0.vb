@@ -1,7 +1,7 @@
 ' Title: Save and Replace Rule
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/save-and-replace-rule/td-p/13802907#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:05:21.712644
+' Scraped: 2025-10-09T09:03:02.643141
 
 If ThisApplication.ActiveDocumentType <> DocumentTypeEnum.kAssemblyDocumentObject Then
 	MsgBox("This rule '" & iLogicVb.RuleName & "' only works for Assembly Documents.",vbOK, "WRONG DOCUMENT TYPE")

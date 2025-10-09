@@ -1,7 +1,7 @@
 ' Title: ilogic rule that creating a cope of a drawing and changing its iPart instance.
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-rule-that-creating-a-cope-of-a-drawing-and-changing-its/td-p/9808596#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:09:37.418034
+' Scraped: 2025-10-09T08:48:13.032466
 
 If ThisApplication.ActiveDocumentType <> DocumentTypeEnum.kAssemblyDocumentObject Then
 	MsgBox("This rule '" & iLogicVb.RuleName & "' only works for Assembly Documents.",vbOKOnly, "WRONG DOCUMENT TYPE")

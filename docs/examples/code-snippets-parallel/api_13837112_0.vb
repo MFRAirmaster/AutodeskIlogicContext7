@@ -1,7 +1,7 @@
 ' Title: Invisible / abandoned weld seam symbols in drawing
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/invisible-abandoned-weld-seam-symbols-in-drawing/td-p/13837112
 ' Category: api
-' Scraped: 2025-10-07T14:00:58.579713
+' Scraped: 2025-10-09T09:05:53.817751
 
 Dim oActiveDoc As DrawingDocument = ThisApplication.ActiveDocument
 

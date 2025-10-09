@@ -1,7 +1,7 @@
 ' Title: Automatic Drawing view sketch, projection, rectangle
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/automatic-drawing-view-sketch-projection-rectangle/td-p/13814668#messageview_0
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/automatic-drawing-view-sketch-projection-rectangle/td-p/13814668
 ' Category: advanced
-' Scraped: 2025-10-07T14:25:56.965551
+' Scraped: 2025-10-09T09:05:50.977766
 
 Sub main()
 	

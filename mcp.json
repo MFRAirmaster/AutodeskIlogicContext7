@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "autodesk-forum-scraper": {
+      "command": "node",
+      "args": ["autodesk-forum-scraper/index.js"],
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}

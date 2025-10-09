@@ -1,7 +1,7 @@
 ' Title: Adding Surface Texture to FlatPattern View
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/adding-surface-texture-to-flatpattern-view/td-p/13339496
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/adding-surface-texture-to-flatpattern-view/td-p/13339496#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:10:25.946099
+' Scraped: 2025-10-09T08:48:31.549314
 
 Dim drw As DrawingDocument = ThisDoc.Document
 Dim osheet As Sheet = drw.ActiveSheet

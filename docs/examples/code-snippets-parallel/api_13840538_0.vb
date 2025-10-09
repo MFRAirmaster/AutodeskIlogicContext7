@@ -1,0 +1,10 @@
+' Title: Looking for some &quot;fun&quot; iLogic code for a T-Shirt
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/looking-for-some-quot-fun-quot-ilogic-code-for-a-t-shirt/td-p/13840538#messageview_0
+' Category: api
+' Scraped: 2025-10-09T09:01:44.887438
+
+Dim Stress As Double = 0
+While Project.Deadline < Now
+    Stress += 1
+    Sleep(1)
+End While

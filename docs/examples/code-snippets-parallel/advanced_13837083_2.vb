@@ -1,7 +1,7 @@
 ' Title: Cut a solid by RevolveFeature
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/cut-a-solid-by-revolvefeature/td-p/13837083#messageview_0
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/cut-a-solid-by-revolvefeature/td-p/13837083
 ' Category: advanced
-' Scraped: 2025-10-07T14:08:28.488479
+' Scraped: 2025-10-09T08:59:50.655940
 
 Dim BackTrimCol As ObjectCollection = oTO.CreateObjectCollection
 			

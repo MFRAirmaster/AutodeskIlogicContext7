@@ -1,7 +1,7 @@
 ' Title: Macro to delete specific sketch symbol?
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/macro-to-delete-specific-sketch-symbol/td-p/13783606#messageview_0
 ' Category: api
-' Scraped: 2025-10-07T14:00:17.398424
+' Scraped: 2025-10-09T09:08:09.898482
 
 Public Sub DeleteSpecificSketchSymbol()
     ' Set a reference to the active drawing document.

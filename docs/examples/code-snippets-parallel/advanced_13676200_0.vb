@@ -1,7 +1,7 @@
 ' Title: Create Finish in Assembly with multiple Occurrence of one part - ERROR
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/create-finish-in-assembly-with-multiple-occurrence-of-one-part/td-p/13676200#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T13:54:46.555252
+' Scraped: 2025-10-09T09:07:47.550504
 
 private void CreateFinish()
  {

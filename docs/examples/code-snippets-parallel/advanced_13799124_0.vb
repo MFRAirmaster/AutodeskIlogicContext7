@@ -1,7 +1,7 @@
 ' Title: Combine steps in one feature
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/combine-steps-in-one-feature/td-p/13799124
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/combine-steps-in-one-feature/td-p/13799124#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:06:46.023925
+' Scraped: 2025-10-09T09:00:32.675908
 
 void Main()
 {

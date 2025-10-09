@@ -1,7 +1,7 @@
 ' Title: Workflow to modify MaterialAsset (apply another PhysicalPropertiesAsset)
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/workflow-to-modify-materialasset-apply-another/td-p/13822777
 ' Category: api
-' Scraped: 2025-10-07T13:57:59.723326
+' Scraped: 2025-10-09T09:06:37.164078
 
 Dim ptDoc As PartDocument = ThisDoc.Document
 

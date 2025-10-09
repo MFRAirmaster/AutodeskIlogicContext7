@@ -1,7 +1,7 @@
 ' Title: Code doesn't work anymore for dxf
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/code-doesn-t-work-anymore-for-dxf/td-p/13763668
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/code-doesn-t-work-anymore-for-dxf/td-p/13763668#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:27:53.703466
+' Scraped: 2025-10-09T09:00:36.452346
 
 Dim oInvApp As Inventor.Application = ThisApplication
 Dim oDoc As Inventor.Document = oInvApp.ActiveDocument

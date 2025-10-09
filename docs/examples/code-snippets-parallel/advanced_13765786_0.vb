@@ -1,7 +1,7 @@
 ' Title: Automated Break on Front View
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/automated-break-on-front-view/td-p/13765786
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/automated-break-on-front-view/td-p/13765786#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:08:22.247459
+' Scraped: 2025-10-09T08:51:08.166712
 
 Public Sub CreateBreakoperationInDrawingView()
     ' Set a reference to the drawing document.

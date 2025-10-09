@@ -1,7 +1,7 @@
 ' Title: iProperty PropertySets Cheat Sheet, Autodesk page is down
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/iproperty-propertysets-cheat-sheet-autodesk-page-is-down/td-p/13798666
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/iproperty-propertysets-cheat-sheet-autodesk-page-is-down/td-p/13798666#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:16:05.845514
+' Scraped: 2025-10-09T08:56:50.059101
 
 Dim invDoc As Document
 invDoc = ThisApplication.ActiveDocument

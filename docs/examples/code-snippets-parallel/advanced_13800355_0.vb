@@ -1,7 +1,7 @@
 ' Title: iLogic 規則是否可以引用部件中的元件並使用 Component.IsActive = True 或 False 控制其抑制狀態？- Can an iLogic rule reference a component in an assembly and control its suppression state using Component.IsActive = True or False?
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-gui-ze-shi-fou-ke-yi-yin-yong-bu-jian-zhong-de-yuan-jian-bing-shi-yong-component-isactive-true-huo-false-kong-zhi-qi-yi-zhi-zhuang-tai/td-p/13800355
 ' Category: advanced
-' Scraped: 2025-10-07T14:32:00.566945
+' Scraped: 2025-10-09T09:06:06.772814
 
 Dim Group_DOOR_上 As Boolean = False
 Dim Group_DOOR_下 As Boolean = False

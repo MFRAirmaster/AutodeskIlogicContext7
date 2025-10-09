@@ -1,7 +1,7 @@
 ' Title: Changing sheetmetal style of a Lofted Flange using iLogic
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/changing-sheetmetal-style-of-a-lofted-flange-using-ilogic/td-p/13824763
 ' Category: advanced
-' Scraped: 2025-10-07T14:06:35.666930
+' Scraped: 2025-10-09T08:56:52.460718
 
 Dim oPartDoc As PartDocument = ThisDoc.ModelDocument
 Dim oFeatures As PartFeatures = oPartDoc.ComponentDefinition.Features

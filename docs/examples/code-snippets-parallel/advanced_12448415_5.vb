@@ -1,7 +1,7 @@
 ' Title: iLogic to Rename Browser Nodes to &quot;Default&quot; setting?
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-to-rename-browser-nodes-to-quot-default-quot-setting/td-p/12448415#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:31:42.916569
+' Scraped: 2025-10-09T08:59:10.514863
 
 Dim oADoc As AssemblyDocument = TryCast(ThisDoc.Document, Inventor.AssemblyDocument)
 If oADoc Is Nothing Then Return

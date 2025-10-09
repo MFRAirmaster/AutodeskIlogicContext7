@@ -1,7 +1,7 @@
 ' Title: Batch Updated Drawing Number
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/batch-updated-drawing-number/td-p/13772995
 ' Category: advanced
-' Scraped: 2025-10-07T14:00:25.000954
+' Scraped: 2025-10-09T09:03:51.327292
 
 Dim oDrawDoc As DrawingDocument
 Dim oSheet As Sheet

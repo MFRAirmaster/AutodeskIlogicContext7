@@ -1,7 +1,7 @@
 ' Title: Automated Mates
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/automated-mates/td-p/13756652#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:08:09.283912
+' Scraped: 2025-10-09T08:57:45.253383
 
 Dim oParalell As Boolean= curAsmOrPlane.Plane.IsParallelTo(curCompOriPlane.Plane, 0.00001)
 Dim oSameDirection As Boolean= curAsmOrPlane.Plane.Normal.IsEqualTo(curCompOriPlane.Plane.Normal)

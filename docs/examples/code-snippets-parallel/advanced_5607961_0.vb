@@ -1,7 +1,7 @@
 ' Title: Easy way to align view/scale label?
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/easy-way-to-align-view-scale-label/td-p/5607961
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/easy-way-to-align-view-scale-label/td-p/5607961#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:00:38.554298
+' Scraped: 2025-10-09T09:08:28.497227
 
 '27.11.2019
 'No frills code to align the views along the bottom edge.

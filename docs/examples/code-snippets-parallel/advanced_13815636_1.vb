@@ -1,7 +1,7 @@
 ' Title: is there a way to find all Browser notes that does not show the partnumber ?
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/is-there-a-way-to-find-all-browser-notes-that-does-not-show-the/td-p/13815636
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/is-there-a-way-to-find-all-browser-notes-that-does-not-show-the/td-p/13815636#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T13:57:28.372632
+' Scraped: 2025-10-09T08:56:03.523707
 
 'this my current code
 

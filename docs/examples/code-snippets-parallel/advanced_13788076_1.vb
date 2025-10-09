@@ -1,7 +1,7 @@
 ' Title: Sketch symbol &amp; Table creation for QC Inspection
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/sketch-symbol-amp-table-creation-for-qc-inspection/td-p/13788076#messageview_0
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/sketch-symbol-amp-table-creation-for-qc-inspection/td-p/13788076
 ' Category: advanced
-' Scraped: 2025-10-07T13:56:09.558894
+' Scraped: 2025-10-09T09:01:52.259838
 
 Dim oSkSybl As SketchedSymbol = ThisApplication.CommandManager.Pick( _
 SelectionFilterEnum.kDrawingSketchedSymbolFilter, "Select a SketchedSymbol to inspect.")

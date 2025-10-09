@@ -1,7 +1,7 @@
 ' Title: Creating a dimension from edge of circle with a face
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/creating-a-dimension-from-edge-of-circle-with-a-face/td-p/11569540#messageview_0
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/creating-a-dimension-from-edge-of-circle-with-a-face/td-p/11569540
 ' Category: troubleshooting
-' Scraped: 2025-10-07T13:59:06.323692
+' Scraped: 2025-10-09T08:53:48.928413
 
 ' Get sheet and view
 Dim Sheet_1 = ThisDrawing.Sheets.ItemByName("Sheet:1")

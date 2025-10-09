@@ -1,7 +1,7 @@
 ' Title: iLogic - Check active project is true
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-check-active-project-is-true/td-p/10218046#messageview_0
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-check-active-project-is-true/td-p/10218046
 ' Category: api
-' Scraped: 2025-10-07T14:11:29.561532
+' Scraped: 2025-10-09T08:50:26.401794
 
 Sub Main
 	Const sProjPath As String = "C:\Temp\"

@@ -1,7 +1,7 @@
 ' Title: Ataching leader note to sketched symbol in drawing
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ataching-leader-note-to-sketched-symbol-in-drawing/td-p/13833109
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ataching-leader-note-to-sketched-symbol-in-drawing/td-p/13833109#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:04:58.419846
+' Scraped: 2025-10-09T08:56:47.455439
 
 Public Sub AddLeaderNotetestxx()
     Dim trg As TransientGeometry

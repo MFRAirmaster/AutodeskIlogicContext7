@@ -1,7 +1,7 @@
 ' Title: View &quot;Dim&quot; Variable Values
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/view-quot-dim-quot-variable-values/td-p/13332453
 ' Category: basic
-' Scraped: 2025-10-07T13:55:26.144749
+' Scraped: 2025-10-09T09:02:09.575729
 
 Dim Val1 As Double = 1.5
 Dim Val2 As Double = 3

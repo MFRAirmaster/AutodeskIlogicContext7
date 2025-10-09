@@ -1,7 +1,7 @@
 ' Title: how to change weld size in weld symbol by ilogic
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/how-to-change-weld-size-in-weld-symbol-by-ilogic/td-p/13788475
 ' Category: api
-' Scraped: 2025-10-07T14:03:54.586173
+' Scraped: 2025-10-09T08:47:15.669205
 
 Dim obj = ThisApplication.CommandManager.Pick(SelectionFilterEnum.kAllEntitiesFilter, "Select a weld symbol")
 

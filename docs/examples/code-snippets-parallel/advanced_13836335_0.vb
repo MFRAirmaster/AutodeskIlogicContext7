@@ -1,7 +1,7 @@
 ' Title: iLogic Rule: Rename Browser Nodes to Show Part Number + Title
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-rule-rename-browser-nodes-to-show-part-number-title/td-p/13836335
 ' Category: advanced
-' Scraped: 2025-10-07T13:59:51.023769
+' Scraped: 2025-10-09T08:53:52.193738
 
 ' iLogic code to change part display names in assembly to Part Number + Title
 ' This code should be run from within the assembly document

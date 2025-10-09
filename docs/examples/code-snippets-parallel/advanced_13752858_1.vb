@@ -1,7 +1,7 @@
 ' Title: Placing iParts into an assembly with iLogic
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/placing-iparts-into-an-assembly-with-ilogic/td-p/13752858#messageview_0
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/placing-iparts-into-an-assembly-with-ilogic/td-p/13752858
 ' Category: advanced
-' Scraped: 2025-10-07T14:00:14.837037
+' Scraped: 2025-10-09T09:06:49.884634
 
 'import parts folder as string EDIT ME!
 Dim partsFolder As String = "R:\Industrial Engineering\A-ME\CAD\Dolly plaques v2"

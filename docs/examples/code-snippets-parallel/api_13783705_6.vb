@@ -1,7 +1,7 @@
 ' Title: Rule with multiple options
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/rule-with-multiple-options/td-p/13783705
 ' Category: api
-' Scraped: 2025-10-07T14:07:55.595605
+' Scraped: 2025-10-09T08:56:35.499410
 
 '"3F Skin" ActiveIf DoorType = "3F" And DoorWidthOptions = "3-0" Then
 		Component.IsActive("3F Skin: Back") = True

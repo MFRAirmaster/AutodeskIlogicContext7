@@ -1,7 +1,7 @@
 ' Title: VBA : Using GetObject in Inventor 2024
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/vba-using-getobject-in-inventor-2024/td-p/13777048#messageview_0
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/vba-using-getobject-in-inventor-2024/td-p/13777048
 ' Category: api
-' Scraped: 2025-10-07T14:11:41.607188
+' Scraped: 2025-10-09T09:09:15.026635
 
 Option Explicit
 Sub OpenExcel()

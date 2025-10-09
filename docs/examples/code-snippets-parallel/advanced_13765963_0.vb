@@ -1,7 +1,7 @@
 ' Title: USE ILOGIC TO EXPORT FLAT PATTERN USING INI TEMPLATE FILE
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/use-ilogic-to-export-flat-pattern-using-ini-template-file/td-p/13765963#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:01:22.241263
+' Scraped: 2025-10-09T08:59:32.765739
 
 ' Get the DWG translator Add-In.
     Dim DWGAddIn As TranslatorAddIn

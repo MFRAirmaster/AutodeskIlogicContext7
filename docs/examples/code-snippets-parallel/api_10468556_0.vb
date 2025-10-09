@@ -1,7 +1,7 @@
 ' Title: Reset view lables
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/reset-view-lables/td-p/10468556
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/reset-view-lables/td-p/10468556#messageview_0
 ' Category: api
-' Scraped: 2025-10-07T14:15:59.996648
+' Scraped: 2025-10-09T08:54:11.565111
 
 Sub Main()
 

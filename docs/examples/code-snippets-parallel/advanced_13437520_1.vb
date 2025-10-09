@@ -1,7 +1,7 @@
 ' Title: Batch Plot IDWs to single PDF
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/batch-plot-idws-to-single-pdf/td-p/13437520
 ' Category: advanced
-' Scraped: 2025-10-07T14:00:06.527229
+' Scraped: 2025-10-09T08:59:56.844603
 
 AddReference "C:\Users\Public\global references\itextsharp.dll"
 AddReference "System.IO"

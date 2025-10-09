@@ -1,6 +1,6 @@
 ' Title: Load second vba project file or reference subroutine in other project file
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/load-second-vba-project-file-or-reference-subroutine-in-other/td-p/4861128#messageview_0
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/load-second-vba-project-file-or-reference-subroutine-in-other/td-p/4861128
 ' Category: api
-' Scraped: 2025-10-07T14:30:19.006118
+' Scraped: 2025-10-09T09:04:27.732664
 
 Public Sub LoadVBAProject() LoadAnotherVBAProject "Put Location of VBA project here"End SubPublic Sub LoadAnotherVBAProject(pvarLocation As String) ' counter to work out the new project number Dim varVBACounter As Long varVBACounter = ThisApplication.VBAProjects.Count ' Open the other project ThisApplication.VBAProjects.Open pvarLocation ' get a reference to the just opened VBA project Dim varTempProject As InventorVBAProject Set varTempProject = ThisApplication.VBAProjects(varVBACounter + 1) ' references for all the different parts of the VBA project Dim varVBAComponent As InventorVBAComponent Dim varVBAMember As InventorVBAMember Dim varVBAArgument As InventorVBAArgument ' go through all the components of the Project and display them For Each varVBAComponent In varTempProject.InventorVBAComponents ' print to the immediate window the name of the component Debug.Print varVBAComponent.Name For Each varVBAMember In varVBAComponent.InventorVBAMembers ' print to the immediate window the name of the members of the component Debug.Print " " & varVBAMember.Name For Each varVBAArgument In varVBAMember.Arguments Debug.Print " " & varVBAArgument.Name & "----" & varVBAArgument.ArgumentType Next varVBAArgument Next varVBAMember Next varVBAComponentEnd Sub

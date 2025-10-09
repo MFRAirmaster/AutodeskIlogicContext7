@@ -1,7 +1,7 @@
 ' Title: iLogic to Apply Multiple Drawing Styles Based on User Parameter (Dimensions, GD&amp;T, Leaders, Datums)
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-to-apply-multiple-drawing-styles-based-on-user-parameter/td-p/13755516
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-to-apply-multiple-drawing-styles-based-on-user-parameter/td-p/13755516#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:24:45.826615
+' Scraped: 2025-10-09T09:02:28.493918
 
 Dim oDoc As DrawingDocument = ThisApplication.ActiveDocument
 

@@ -1,7 +1,7 @@
 ' Title: Feature Rectangular Pattern creation in assembly using iLogic
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/feature-rectangular-pattern-creation-in-assembly-using-ilogic/td-p/13756319
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/feature-rectangular-pattern-creation-in-assembly-using-ilogic/td-p/13756319#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:06:46.024977
+' Scraped: 2025-10-09T09:09:31.652034
 
 Dim oAsm As AssemblyDocument = ThisApplication.ActiveDocument
 Dim oDef As AssemblyComponentDefinition = oAsm.ComponentDefinition

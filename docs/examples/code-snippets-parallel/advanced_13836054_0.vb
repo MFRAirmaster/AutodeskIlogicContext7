@@ -1,7 +1,7 @@
 ' Title: iLogic Toggle Folders
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-toggle-folders/td-p/13836054#messageview_0
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-toggle-folders/td-p/13836054
 ' Category: advanced
-' Scraped: 2025-10-07T14:22:40.952035
+' Scraped: 2025-10-09T09:05:06.578864
 
 Dim oPane1 As BrowserPane = ThisDoc.Document.BrowserPanes("Model")
 

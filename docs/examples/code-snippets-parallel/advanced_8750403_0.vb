@@ -1,7 +1,7 @@
 ' Title: Create iProperties for all parts in Content Center
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/create-iproperties-for-all-parts-in-content-center/td-p/8750403#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:05:24.367385
+' Scraped: 2025-10-09T09:04:58.524984
 
 trigger = iTrigger0
 ' Get the active assembly. 

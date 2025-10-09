@@ -1,7 +1,7 @@
 ' Title: ilogic code needed: Finish Feature, is it used, if so set the first one to an iproperty
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-code-needed-finish-feature-is-it-used-if-so-set-the-first/td-p/13808368#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:23:03.028027
+' Scraped: 2025-10-09T08:48:04.414652
 
 'USING THE FINISH FEATURE.
 'USES THE FINISH SHORT DESCRIPTION FOR THE FINISH IPROPERTY, WHICH IS USED ON THE DRAWING BORDER

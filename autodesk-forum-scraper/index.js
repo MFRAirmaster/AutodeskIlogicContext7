@@ -7,6 +7,9 @@ const {
   ListToolsRequestSchema,
 } = require('@modelcontextprotocol/sdk/types.js');
 const puppeteer = require('puppeteer');
+const fs = require('fs');
+const path = require('path');
+const sqlite3 = require('sqlite3').verbose();
 
 class AutodeskForumScraperServer {
   constructor() {
@@ -81,6 +84,67 @@ class AutodeskForumScraperServer {
             required: ['url'],
           },
         },
+        {
+          name: 'search_local_snippets',
+          description: 'Search for iLogic code snippets in the local database using keywords',
+          inputSchema: {
+            type: 'object',
+            properties: {
+              query: {
+                type: 'string',
+                description: 'Search query (keywords like "parameter", "feature", "assembly")',
+              },
+              category: {
+                type: 'string',
+                description: 'Optional category filter (basic, advanced, api, troubleshooting)',
+              },
+              limit: {
+                type: 'number',
+                description: 'Maximum number of results to return',
+                default: 10,
+              },
+            },
+            required: ['query'],
+          },
+        },
+        {
+          name: 'get_code_examples',
+          description: 'Get code examples by category from the local database',
+          inputSchema: {
+            type: 'object',
+            properties: {
+              category: {
+                type: 'string',
+                description: 'Category to get examples for (basic, advanced, api, troubleshooting)',
+              },
+              limit: {
+                type: 'number',
+                description: 'Maximum number of examples to return',
+                default: 20,
+              },
+            },
+            required: ['category'],
+          },
+        },
+        {
+          name: 'get_related_examples',
+          description: 'Find related code examples based on a code snippet or description',
+          inputSchema: {
+            type: 'object',
+            properties: {
+              code_snippet: {
+                type: 'string',
+                description: 'Code snippet to find related examples for',
+              },
+              limit: {
+                type: 'number',
+                description: 'Maximum number of related examples to return',
+                default: 5,
+              },
+            },
+            required: ['code_snippet'],
+          },
+        },
       ],
     }));
 
@@ -90,6 +154,12 @@ class AutodeskForumScraperServer {
           return await this.scrapeForumPost(request.params.arguments);
         } else if (request.params.name === 'scrape_forum_list') {
           return await this.scrapeForumList(request.params.arguments);
+        } else if (request.params.name === 'search_local_snippets') {
+          return await this.searchLocalSnippets(request.params.arguments);
+        } else if (request.params.name === 'get_code_examples') {
+          return await this.getCodeExamples(request.params.arguments);
+        } else if (request.params.name === 'get_related_examples') {
+          return await this.getRelatedExamples(request.params.arguments);
         } else {
           throw new Error(`Unknown tool: ${request.params.name}`);
         }
@@ -281,6 +351,226 @@ class AutodeskForumScraperServer {
     } finally {
       await browser.close();
     }
+  }
+
+  async searchLocalSnippets(args) {
+    const { query, category, limit = 10 } = args;
+
+    return new Promise((resolve, reject) => {
+      const dbPath = path.join(__dirname, '..', 'docs', 'examples', 'ilogic-snippets.db');
+
+      if (!fs.existsSync(dbPath)) {
+        resolve({
+          content: [
+            {
+              type: 'text',
+              text: 'Database not found. Please run the scraper first to create the database.',
+            },
+          ],
+        });
+        return;
+      }
+
+      const db = new sqlite3.Database(dbPath);
+      let sql = `
+        SELECT p.post_id, p.title, p.author, p.content, p.category, p.url,
+               cs.code, cs.language
+        FROM posts p
+        JOIN code_snippets cs ON p.post_id = cs.post_id
+        WHERE (p.title LIKE ? OR p.content LIKE ? OR cs.code LIKE ?)
+      `;
+      const params = [`%${query}%`, `%${query}%`, `%${query}%`];
+
+      if (category) {
+        sql += ' AND p.category = ?';
+        params.push(category);
+      }
+
+      sql += ' LIMIT ?';
+      params.push(limit);
+
+      db.all(sql, params, (err, rows) => {
+        db.close();
+
+        if (err) {
+          reject(err);
+          return;
+        }
+
+        const results = rows.map(row => ({
+          post_id: row.post_id,
+          title: row.title,
+          author: row.author,
+          category: row.category,
+          url: row.url,
+          code_preview: row.code.substring(0, 200) + (row.code.length > 200 ? '...' : ''),
+          language: row.language,
+        }));
+
+        resolve({
+          content: [
+            {
+              type: 'text',
+              text: JSON.stringify({
+                query: query,
+                category: category || 'all',
+                total_results: results.length,
+                results: results,
+              }, null, 2),
+            },
+          ],
+        });
+      });
+    });
+  }
+
+  async getCodeExamples(args) {
+    const { category, limit = 20 } = args;
+
+    return new Promise((resolve, reject) => {
+      const dbPath = path.join(__dirname, '..', 'docs', 'examples', 'ilogic-snippets.db');
+
+      if (!fs.existsSync(dbPath)) {
+        resolve({
+          content: [
+            {
+              type: 'text',
+              text: 'Database not found. Please run the scraper first to create the database.',
+            },
+          ],
+        });
+        return;
+      }
+
+      const db = new sqlite3.Database(dbPath);
+      const sql = `
+        SELECT p.post_id, p.title, p.author, p.content, p.category, p.url,
+               cs.code, cs.language
+        FROM posts p
+        JOIN code_snippets cs ON p.post_id = cs.post_id
+        WHERE p.category = ?
+        ORDER BY p.scraped_at DESC
+        LIMIT ?
+      `;
+
+      db.all(sql, [category, limit], (err, rows) => {
+        db.close();
+
+        if (err) {
+          reject(err);
+          return;
+        }
+
+        const results = rows.map(row => ({
+          post_id: row.post_id,
+          title: row.title,
+          author: row.author,
+          category: row.category,
+          url: row.url,
+          code: row.code,
+          language: row.language,
+        }));
+
+        resolve({
+          content: [
+            {
+              type: 'text',
+              text: JSON.stringify({
+                category: category,
+                total_examples: results.length,
+                examples: results,
+              }, null, 2),
+            },
+          ],
+        });
+      });
+    });
+  }
+
+  async getRelatedExamples(args) {
+    const { code_snippet, limit = 5 } = args;
+
+    return new Promise((resolve, reject) => {
+      const dbPath = path.join(__dirname, '..', 'docs', 'examples', 'ilogic-snippets.db');
+
+      if (!fs.existsSync(dbPath)) {
+        resolve({
+          content: [
+            {
+              type: 'text',
+              text: 'Database not found. Please run the scraper first to create the database.',
+            },
+          ],
+        });
+        return;
+      }
+
+      const db = new sqlite3.Database(dbPath);
+
+      // Extract keywords from the code snippet
+      const keywords = code_snippet.toLowerCase()
+        .split(/[^a-zA-Z0-9_]/)
+        .filter(word => word.length > 3)
+        .slice(0, 5); // Take first 5 keywords
+
+      if (keywords.length === 0) {
+        resolve({
+          content: [
+            {
+              type: 'text',
+              text: 'No meaningful keywords found in the code snippet.',
+            },
+          ],
+        });
+        return;
+      }
+
+      // Build search query
+      const whereClause = keywords.map(() => 'cs.code LIKE ?').join(' OR ');
+      const sql = `
+        SELECT p.post_id, p.title, p.author, p.category, p.url,
+               cs.code, cs.language
+        FROM posts p
+        JOIN code_snippets cs ON p.post_id = cs.post_id
+        WHERE ${whereClause}
+        ORDER BY p.scraped_at DESC
+        LIMIT ?
+      `;
+
+      const params = [...keywords.map(k => `%${k}%`), limit];
+
+      db.all(sql, params, (err, rows) => {
+        db.close();
+
+        if (err) {
+          reject(err);
+          return;
+        }
+
+        const results = rows.map(row => ({
+          post_id: row.post_id,
+          title: row.title,
+          author: row.author,
+          category: row.category,
+          url: row.url,
+          code_preview: row.code.substring(0, 300) + (row.code.length > 300 ? '...' : ''),
+          language: row.language,
+        }));
+
+        resolve({
+          content: [
+            {
+              type: 'text',
+              text: JSON.stringify({
+                original_keywords: keywords,
+                total_related: results.length,
+                related_examples: results,
+            }, null, 2),
+            },
+          ],
+        });
+      });
+    });
   }
 
   async run() {

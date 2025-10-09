@@ -1,7 +1,7 @@
 ' Title: Export Drawing dimension to excel
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/export-drawing-dimension-to-excel/td-p/10155062
 ' Category: api
-' Scraped: 2025-10-07T14:00:48.670718
+' Scraped: 2025-10-09T09:04:30.935192
 
 Dim a As Inventor.DrawingDocument = ThisDrawing.Document
 Dim s As Inventor.Sheet = a.ActiveSheet

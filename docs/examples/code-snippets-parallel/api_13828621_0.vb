@@ -1,7 +1,7 @@
 ' Title: Inventor Vb.Net &quot;AddIn&quot; - Change A Drawing View
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/inventor-vb-net-quot-addin-quot-change-a-drawing-view/td-p/13828621
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/inventor-vb-net-quot-addin-quot-change-a-drawing-view/td-p/13828621#messageview_0
 ' Category: api
-' Scraped: 2025-10-07T13:55:16.646782
+' Scraped: 2025-10-09T08:50:48.572191
 
 Sub ReplaceModelReference(drawing As DrawingDocument, newFile As String)
     'This assumes the drawing references only one model

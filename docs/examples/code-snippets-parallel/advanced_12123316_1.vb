@@ -1,7 +1,7 @@
 ' Title: Local iLogic Rules in Mirrored Parts?
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/local-ilogic-rules-in-mirrored-parts/td-p/12123316#messageview_0
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/local-ilogic-rules-in-mirrored-parts/td-p/12123316
 ' Category: advanced
-' Scraped: 2025-10-07T14:16:57.076251
+' Scraped: 2025-10-09T09:00:54.516234
 
 Sub main()
 	Dim oDoc As Document = ThisDoc.Document

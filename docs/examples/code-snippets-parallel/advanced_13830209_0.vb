@@ -1,7 +1,7 @@
 ' Title: inest file giving wrong Document Type Enumerator
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/inest-file-giving-wrong-document-type-enumerator/td-p/13830209
 ' Category: advanced
-' Scraped: 2025-10-07T14:06:26.783792
+' Scraped: 2025-10-09T08:57:29.816774
 
 Logger.Debug("Open Documents: " & ThisApplication.Documents.Count)
 

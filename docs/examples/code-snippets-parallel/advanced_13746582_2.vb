@@ -1,7 +1,7 @@
 ' Title: Add sketchedsymbol and weldingsymbol
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/add-sketchedsymbol-and-weldingsymbol/td-p/13746582
 ' Category: advanced
-' Scraped: 2025-10-07T14:02:58.990919
+' Scraped: 2025-10-09T08:58:36.120898
 
 Public Function InsertSketchedSymbolOnSheet()
     ' Set a reference to the drawing document.

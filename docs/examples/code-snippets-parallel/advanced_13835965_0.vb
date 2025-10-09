@@ -1,7 +1,7 @@
 ' Title: Ilogic select all views on a sheet and change iproperty of assembly
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-select-all-views-on-a-sheet-and-change-iproperty-of/td-p/13835965
 ' Category: advanced
-' Scraped: 2025-10-07T14:10:02.786239
+' Scraped: 2025-10-09T09:04:38.184905
 
 Dim oDDoc As DrawingDocument = ThisDoc.Document
 Dim oSheet As Inventor.Sheet = oDDoc.ActiveSheet

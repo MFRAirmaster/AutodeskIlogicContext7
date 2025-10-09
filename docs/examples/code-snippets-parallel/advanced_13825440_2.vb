@@ -1,7 +1,7 @@
 ' Title: Problem to read open documents
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/problem-to-read-open-documents/td-p/13825440#messageview_0
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/problem-to-read-open-documents/td-p/13825440
 ' Category: advanced
-' Scraped: 2025-10-07T13:56:36.661457
+' Scraped: 2025-10-09T09:07:30.755176
 
 Private Function GetDocumentList(ByRef docs As Object) As Variant
 

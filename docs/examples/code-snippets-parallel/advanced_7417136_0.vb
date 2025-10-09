@@ -1,7 +1,7 @@
 ' Title: update drawing line colour based on part colour
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/update-drawing-line-colour-based-on-part-colour/td-p/7417136
 ' Category: advanced
-' Scraped: 2025-10-07T13:59:00.967123
+' Scraped: 2025-10-09T09:03:39.887945
 
 Sub Main 
 	' Get the active drawing document. 

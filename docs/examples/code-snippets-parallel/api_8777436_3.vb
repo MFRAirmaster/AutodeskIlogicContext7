@@ -1,7 +1,7 @@
 ' Title: Ilogic split a string
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-split-a-string/td-p/8777436#messageview_0
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-split-a-string/td-p/8777436
 ' Category: api
-' Scraped: 2025-10-07T14:04:35.718094
+' Scraped: 2025-10-09T09:09:57.471675
 
 Dim Separators() As Char = {";"} 
 Sentence = StringParameter

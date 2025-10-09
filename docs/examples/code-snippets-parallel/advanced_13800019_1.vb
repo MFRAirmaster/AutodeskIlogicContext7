@@ -1,7 +1,7 @@
 ' Title: AddAngularDimension throws exception
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/addangulardimension-throws-exception/td-p/13800019
 ' Category: advanced
-' Scraped: 2025-10-07T14:08:53.779455
+' Scraped: 2025-10-09T09:09:18.484234
 
 var curveSegment = curve.Segments[1];
             var otherCurveSegment = otherCurve.Segments[1];

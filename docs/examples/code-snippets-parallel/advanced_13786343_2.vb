@@ -1,7 +1,7 @@
 ' Title: LEADER NOTE FILTER SETTINGS
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/leader-note-filter-settings/td-p/13786343
 ' Category: advanced
-' Scraped: 2025-10-07T14:05:45.215964
+' Scraped: 2025-10-09T08:54:19.173225
 
 Sub Main
 	Dim oInvApp As Inventor.Application = ThisApplication

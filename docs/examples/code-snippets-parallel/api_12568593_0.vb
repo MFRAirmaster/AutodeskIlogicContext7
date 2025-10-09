@@ -1,7 +1,7 @@
 ' Title: Check if drawing parts list is splitted
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/check-if-drawing-parts-list-is-splitted/td-p/12568593
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/check-if-drawing-parts-list-is-splitted/td-p/12568593#messageview_0
 ' Category: api
-' Scraped: 2025-10-07T14:02:52.609289
+' Scraped: 2025-10-09T09:01:02.025775
 
 Public Sub Main()
 	Dim oDDoc As DrawingDocument = TryCast(ThisDoc.Document, DrawingDocument)

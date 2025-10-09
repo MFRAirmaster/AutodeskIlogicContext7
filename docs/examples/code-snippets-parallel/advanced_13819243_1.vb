@@ -1,7 +1,7 @@
 ' Title: [iLogic/API] - Midpoint of dimension
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/ilogic-api-midpoint-of-dimension/td-p/13819243
 ' Category: advanced
-' Scraped: 2025-10-07T14:08:55.123136
+' Scraped: 2025-10-09T08:55:13.787083
 
 ' 1. Get the drawing document and active sheet
 Dim oDoc As DrawingDocument = ThisDoc.Document

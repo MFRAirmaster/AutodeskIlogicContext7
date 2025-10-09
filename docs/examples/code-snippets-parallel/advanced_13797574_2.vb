@@ -1,7 +1,7 @@
 ' Title: How To Delete Occurrence Pattern Element
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/how-to-delete-occurrence-pattern-element/td-p/13797574
 ' Category: advanced
-' Scraped: 2025-10-07T14:09:36.290473
+' Scraped: 2025-10-09T08:56:43.708945
 
 Sub main()
 

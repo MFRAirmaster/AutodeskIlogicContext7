@@ -1,7 +1,7 @@
 ' Title: automate the creation of individual part drawings
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/automate-the-creation-of-individual-part-drawings/td-p/13755659
 ' Category: advanced
-' Scraped: 2025-10-07T13:56:19.478341
+' Scraped: 2025-10-09T09:00:30.331553
 
 Dim oDoc As AssemblyDocument = ThisApplication.ActiveDocument
 

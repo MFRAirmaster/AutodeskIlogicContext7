@@ -1,7 +1,7 @@
 ' Title: Have the sheet name automatically generate in Title block
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/have-the-sheet-name-automatically-generate-in-title-block/td-p/10784336#messageview_0
 ' Category: api
-' Scraped: 2025-10-07T14:02:44.465575
+' Scraped: 2025-10-09T09:08:43.934542
 
 Dim doc As DrawingDocument = ThisDoc.Document
 Dim sheet As Sheet = doc.ActiveSheet

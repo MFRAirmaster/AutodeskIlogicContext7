@@ -1,7 +1,7 @@
 ' Title: Sample to Modify AssetValue
-' URL: https://forums.autodesk.com/t5/inventor-programming-forum/sample-to-modify-assetvalue/td-p/13811384
+' URL: https://forums.autodesk.com/t5/inventor-programming-forum/sample-to-modify-assetvalue/td-p/13811384#messageview_0
 ' Category: advanced
-' Scraped: 2025-10-07T14:01:21.074362
+' Scraped: 2025-10-09T08:53:49.024362
 
 materialasset.Item("physmat_Keywords").Value = sap_.Text
 materialasset.Item("physmat_Label").Value = sap_.Text

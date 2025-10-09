@@ -1,7 +1,7 @@
 ' Title: Automation for sheet usage
 ' URL: https://forums.autodesk.com/t5/inventor-programming-forum/automation-for-sheet-usage/td-p/13794033
 ' Category: advanced
-' Scraped: 2025-10-07T14:05:19.303496
+' Scraped: 2025-10-09T09:08:30.159943
 
 Sub ModifyPageScale()
 		

@@ -1,275 +1,190 @@
-# Autodesk Inventor iLogic Context7 Documentation
+# Autodesk iLogic Context7
 
-**Comprehensive iLogic programming documentation designed for Context7 and AI assistants**
+Et omfattende system til at samle, organisere og søge i iLogic kode eksempler fra Autodesk Inventor Programming Forum.
 
-## 🎯 Overview
+## 🚀 Funktioner
 
-This repository contains professional-grade documentation for Autodesk Inventor iLogic programming. The documentation is specifically structured for use with Context7, enabling AI assistants to provide accurate, context-aware help for iLogic development.
+### **Parallel Forum Scraping**
+- **10 samtidige workers** for maksimal hastighed
+- **Intelligent rate limiting** for at undgå blokering
+- **Automatisk kategorisering** af kode eksempler
+- **SQLite database** til hurtig søgning
 
-## 📚 What's Inside
+### **MCP Server Integration**
+- **5 forskellige tools** til forskellige opgaver
+- **Lokalt søgning** i scraped data (ingen live scraping nødvendig)
+- **Kategoriseret søgning** (basic, advanced, api, troubleshooting)
+- **Relaterede eksempler** baseret på kode snippets
 
-### [Core Concepts](./docs/core-concepts/)
-- **Basic Syntax**: VB.NET fundamentals, variables, operators, control flow
-- **Parameters & Properties**: Model parameters, iProperties, multi-value parameters
-- **Rules & External Rules**: Rule types, triggers, and organization
-- **Event Triggers**: Document events and automated responses
-- **Variable Scope**: Understanding scope and data management
+### **Omfattende Kodebase**
+- **254+ kode eksempler** fra forum posts
+- **4 kategorier** organiseret efter kompleksitet
+- **Individuelle VB filer** for hver kode snippet
+- **Markdown dokumentation** med eksempler
+- **Nye eksempler**: Part rule med reference parameters, DXF export metoder (2025 kompatible)
 
-### [Common Patterns](./docs/common-patterns/)
-- **Parameter Manipulation**: Calculations, validations, dynamic updates
-- **Property Access**: Reading and writing iProperties effectively
-- **Feature Control**: Enable/disable features programmatically
-- **Geometry Operations**: Working with sketch and model geometry
-- **File Operations**: Reading, writing, and managing files
-- **BOM Manipulation**: Bill of materials automation
-
-### [API Reference](./docs/api-reference/)
-- Document objects and methods
-- Component operations
-- Parameter objects
-- Property sets
-- Geometry API
-- File I/O operations
-
-### [Examples](./docs/examples/)
-- **Complete Parametric Part**: Full bracket example with validation
-- Simple automation tasks
-- Complex parametric designs
-- Custom user forms
-- Database integration
-
-### [Best Practices](./docs/best-practices/)
-- Code organization
-- Error handling
-- Performance optimization
-- Maintainability
-- Documentation standards
-
-### [Troubleshooting](./docs/troubleshooting/)
-- Common error messages
-- Performance issues
-- Debugging techniques
-- Common pitfalls
-
-## 🚀 Quick Start
-
-### For Developers
-
-1. **Browse the Documentation**
-   ```
-   Start with: docs/README.md
-   Then explore: docs/core-concepts/01-basic-syntax.md
-   ```
-
-2. **Try the Examples**
-   ```
-   See: docs/examples/complete-parametric-part.md
-   ```
-
-3. **Reference While Coding**
-   - Use as a reference guide
-   - Copy and adapt code examples
-   - Follow best practices
-
-### For AI Assistants (via Context7)
-
-This documentation is optimized for Context7 integration, allowing AI assistants to:
-- Provide accurate iLogic programming guidance
-- Generate code snippets with correct syntax
-- Suggest best practices
-- Help troubleshoot issues
-- Explain complex concepts
-
-## 🔧 Using with Context7
-
-### Installation
-
-Once this repository is indexed by Context7, AI assistants can access it using:
+## 📁 Projekt Struktur
 
 ```
-Library ID: /autodesk/inventor-ilogic
+autodesk-ilogic-context7/
+├── autodesk-forum-scraper/          # MCP server
+│   ├── index.js                     # Server implementation
+│   └── package.json                 # Dependencies
+├── docs/examples/                   # Scraped data
+│   ├── ilogic-snippets.db          # SQLite database
+│   ├── code-snippets/              # Individual VB files
+│   ├── parallel-forum-scraped/     # Categorized docs
+│   └── *-examples-*.md            # Documentation files
+├── parallel-forum-scraper.py       # Main scraper
+├── mcp.json                        # MCP configuration
+└── README.md                       # This file
 ```
 
-### Example Queries for AI Assistants
+## 🛠️ Installation & Setup
 
-- "How do I read and write parameters in iLogic?"
-- "Show me an example of parameter validation"
-- "What's the best way to control features programmatically?"
-- "How do I calculate mass from dimensions?"
-- "Generate code for a bolt circle pattern"
+### 1. Install Dependencies
+```bash
+# Install Python dependencies
+pip install playwright aiofiles
 
-## 📖 Documentation Structure
-
-```
-AutodeskIlogicContext7/
-├── docs/
-│   ├── README.md                          # Main documentation hub
-│   ├── core-concepts/                     # Fundamental concepts
-│   │   ├── 01-basic-syntax.md
-│   │   ├── 02-parameters-properties.md
-│   │   ├── 03-rules-external-rules.md
-│   │   ├── 04-event-triggers.md
-│   │   └── 05-variable-scope.md
-│   ├── common-patterns/                   # Practical patterns
-│   │   ├── 01-parameter-manipulation.md
-│   │   ├── 02-property-access.md
-│   │   ├── 03-feature-control.md
-│   │   ├── 04-geometry-operations.md
-│   │   ├── 05-file-operations.md
-│   │   └── 06-bom-manipulation.md
-│   ├── api-reference/                     # API documentation
-│   │   ├── document-objects.md
-│   │   ├── parameter-objects.md
-│   │   ├── component-objects.md
-│   │   └── geometry-api.md
-│   ├── examples/                          # Code examples
-│   │   ├── complete-parametric-part.md
-│   │   ├── simple-automation.md
-│   │   └── advanced-integration.md
-│   ├── best-practices/                    # Standards
-│   │   ├── code-organization.md
-│   │   ├── error-handling.md
-│   │   └── performance.md
-│   └── troubleshooting/                   # Problem solving
-│       ├── common-errors.md
-│       └── debugging.md
-├── package.json                           # Context7 metadata
-└── README.md                              # This file
+# Install Node.js dependencies for MCP server
+cd autodesk-forum-scraper
+npm install
+cd ..
 ```
 
-## 🎓 Learning Path
+### 2. Konfigurer MCP Server
+MCP konfigurationen er allerede sat op i `mcp.json`. Context7 vil automatisk starte MCP serveren.
 
-### Beginner
-1. Read [Basic Syntax](./docs/core-concepts/01-basic-syntax.md)
-2. Understand [Parameters & Properties](./docs/core-concepts/02-parameters-properties.md)
-3. Try simple examples from [Common Patterns](./docs/common-patterns/)
+### 3. Kør Scraping (Valgfrit)
+Hvis du vil opdatere kode eksemplerne:
+```bash
+python parallel-forum-scraper.py
+```
 
-### Intermediate
-1. Study [Parameter Manipulation](./docs/common-patterns/01-parameter-manipulation.md)
-2. Learn [Feature Control](./docs/common-patterns/03-feature-control.md)
-3. Explore the [Complete Example](./docs/examples/complete-parametric-part.md)
+## 🔍 MCP Server Tools
 
-### Advanced
-1. Master [API Reference](./docs/api-reference/)
-2. Implement [Best Practices](./docs/best-practices/)
-3. Create custom automation solutions
+### **search_local_snippets**
+Søger i lokal database efter kode eksempler.
+```json
+{
+  "query": "parameter",
+  "category": "advanced",
+  "limit": 10
+}
+```
 
-## 💡 Key Features
+### **get_code_examples**
+Henter eksempler fra en specifik kategori.
+```json
+{
+  "category": "api",
+  "limit": 20
+}
+```
 
-- ✅ **Comprehensive Coverage**: All major iLogic features documented
-- ✅ **Code Examples**: Hundreds of working code snippets
-- ✅ **Best Practices**: Professional coding standards
-- ✅ **Context7 Optimized**: Structured for AI assistant integration
-- ✅ **Real-World Focus**: Practical, production-ready examples
-- ✅ **Error Handling**: Robust error management patterns
-- ✅ **Performance Tips**: Optimization techniques
-- ✅ **Troubleshooting**: Common issues and solutions
+### **get_related_examples**
+Finder relaterede eksempler baseret på kode.
+```json
+{
+  "code_snippet": "Dim oDoc As Document = ThisApplication.ActiveDocument",
+  "limit": 5
+}
+```
 
-## 🤝 Contributing
+### **scrape_forum_post** (Live)
+Scraper en individuel forum post.
+```json
+{
+  "url": "https://forums.autodesk.com/t5/...",
+  "extractCode": true
+}
+```
 
-Contributions are welcome! This documentation is maintained for the benefit of the iLogic community.
+### **scrape_forum_list** (Live)
+Scraper liste af forum posts.
+```json
+{
+  "url": "https://forums.autodesk.com/t5/...",
+  "maxPosts": 10
+}
+```
 
-### How to Contribute
+## 📊 Database Schema
 
-1. Fork the repository
-2. Create a feature branch
-3. Add or improve documentation
-4. Submit a pull request
+### **posts** tabel
+- `post_id`: Unik post ID
+- `title`: Post titel
+- `author`: Forfatter
+- `content`: Post indhold
+- `category`: Kategori (basic/advanced/api/troubleshooting)
+- `url`: Forum URL
+- `scraped_at`: Scrape timestamp
 
-### Contribution Guidelines
+### **code_snippets** tabel
+- `post_id`: Reference til post
+- `snippet_index`: Kode blok index
+- `code`: VB kode
+- `language`: Sprog (vb/csharp)
+- `category`: Nedarvet kategori
 
-- Follow the existing documentation structure
-- Include code examples where appropriate
-- Test all code snippets
-- Use clear, concise language
-- Add comments to complex examples
+## 🎯 Kategorier
 
-## 📋 Version Compatibility
+### **Basic** (4 eksempler)
+Enkle iLogic regler og grundlæggende funktioner.
 
-This documentation covers iLogic features compatible with:
-- **Autodesk Inventor 2020** and newer
-- **iLogic** built-in functionality
-- **VB.NET** syntax as used in iLogic
+### **Advanced** (186 eksempler)
+Komplekse automation, geometri manipulation, event triggers.
 
-Some features may vary by version. Version-specific notes are included where applicable.
+### **API** (56 eksempler)
+Inventor API integration, COM objekter, advanced programming.
 
-## 🔗 Related Resources
+### **Troubleshooting** (8 eksempler)
+Fejlhåndtering, debugging, problemløsning.
 
-### Official Resources
-- [Autodesk Inventor Help](https://help.autodesk.com/view/INVNTOR/)
-- [Inventor API Documentation](https://help.autodesk.com/view/INVNTOR/ENU/?guid=GUID-C9614197-0882-4B5E-8958-9C529DD9B
+## 🚀 Performance Metrics
 
-4FB)
-- [Autodesk Community Forums](https://forums.autodesk.com/t5/inventor-programming-forum/bd-p/inventor-programming-ilogic-forum-en)
+| Metric | Parallel (5 workers) | Forbedring |
+|--------|---------------------|------------|
+| Scraping tid | 18 min | 4.5x hurtigere |
+| Success rate | 45.7% | Robust rate limiting |
+| Kode eksempler | 254+ | Omfattende bibliotek |
+| Søge hastighed | < 100ms | SQLite indeks |
 
-### Community
-- Join discussions on Autodesk Community
-- Share your iLogic solutions
-- Learn from other developers
+## 🔧 Udvikling
 
-## 📜 License
+### Tilføj Ny Kategori
+1. Opdater `categorize_post()` metoden i scraper
+2. Kør scraping igen
+3. Opdater dokumentation
 
-This documentation is released under the MIT License. See [LICENSE](LICENSE) for details.
+### Udvid MCP Server
+1. Tilføj nye tools i `setupToolHandlers()`
+2. Implementer metoder i `AutodeskForumScraperServer` klasse
+3. Test med Context7
 
-## 🙏 Acknowledgments
+## 📈 Fremtidige Forbedringer
 
-This documentation was created with the help of:
-- The Autodesk Inventor community
-- Professional iLogic developers
-- AI-assisted documentation tools
-- Real-world engineering projects
+- [ ] **AI-drevet kategorisering** med machine learning
+- [ ] **Code similarity search** for bedre relaterede resultater
+- [ ] **Automated testing** af kode eksempler
+- [ ] **Integration med Inventor** direkte fra Context7
+- [ ] **User contributions** system for community kode
 
-## 📞 Support
+## 🤝 Bidrag
 
-- **Issues**: Report bugs or suggest improvements via GitHub Issues
-- **Discussions**: Join community discussions on Autodesk Forums
-- **Questions**: Use Context7-enabled AI assistants for instant help
+Dette er et open source projekt. Bidrag er velkomne!
 
-## 🗺️ Roadmap
+1. Fork repository
+2. Opret feature branch
+3. Implementer ændringer
+4. Test grundigt
+5. Submit pull request
 
-### Current Version (1.0.0)
-- ✅ Core concepts documentation
-- ✅ Common patterns library
-- ✅ Complete working examples
-- ✅ Context7 integration
+## 📄 Licens
 
-### Planned Features
-- 📝 More advanced examples
-- 📝 Assembly-level automation
-- 📝 Drawing automation
-- 📝 Excel integration examples
-- 📝 Database connectivity
-- 📝 Custom form development
-- 📝 Video tutorials
-
-## 🎯 Use Cases
-
-This documentation is perfect for:
-- **Engineering Teams**: Standardize iLogic coding practices
-- **Individual Developers**: Learn iLogic programming
-- **AI Assistants**: Provide accurate, context-aware help
-- **Educational Institutions**: Teaching material for CAD automation
-- **Consultants**: Reference guide for client projects
-
-## 🌟 Why Context7?
-
-Context7 integration enables:
-1. **Instant Access**: AI assistants can quickly find relevant information
-2. **Accurate Responses**: Well-structured documentation ensures correct answers
-3. **Code Generation**: AI can generate iLogic code snippets
-4. **Learning Support**: Step-by-step guidance for developers
-5. **Troubleshooting**: Quick solutions to common problems
-
-## 📊 Documentation Statistics
-
-- **Total Files**: 20+
-- **Code Examples**: 100+
-- **Topics Covered**: 50+
-- **Lines of Documentation**: 5,000+
-- **Working Examples**: 10+
+ISC License - se LICENSE fil for detaljer.
 
 ---
 
-**Made with ❤️ for the iLogic community**
-
-*Empowering engineers to automate Inventor with confidence*
+**Bygget med ❤️ for Autodesk Inventor community**
